@@ -20,3 +20,16 @@ product=$(($int1*$int2))
 #Print the final result.
 echo "The sum of $int1 and $int2 is $sum. "
 echo "The product of $int1 and $int2 is $product. "
+
+#if then statement used to deternube whether the sum is greater thna, less than or equal to the prodcut.
+
+if [ $sum -lt $product ]
+then 
+    echo "The sum is less than the product value. "
+elif [ $sum==$product ]
+then 
+    echo "The sum is equal to the product. "
+elif [ $sum -gt $product ]
+then 
+    echo "The sum is greater than the prodcut value. "
+fi
